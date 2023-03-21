@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "ColfaxAI";
+    src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
+        url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ColfaxAI";
+    src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+        url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.username_generator {
+    margin: 0;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+    color: #1e3a8a;
+    height: 90vh;
+}
+
+.username_generator main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username_generator main h1 {
+    margin: 1rem;
+}
+
+.username_generator main form {
+    width: 100%;
+    height: 100%;
+}
+
+.username_generator header {
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #1e3a8a;
+    width: 80%;
+}
+
+.username_generator header>h1:last-child {
+    margin: 0 auto;
+}
+
+.backout {
+    color: #1e3a8a;
+    font-size: x-large;
+    flex: 0;
+    position: absolute;
+}
+
+.backout:active {
+    color: #1d4ed8;
+}
+
+.box {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box div {
+    margin-top: 0.5rem;
+}
+
+.box div:nth-child(3) {
+    width: 100%;
+}
+
+.box div:nth-child(3) input:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.box div:nth-child(1),
+.box div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box div:nth-child(1) label,
+.box div:nth-child(2) div label {
+    padding: 0.5rem;
+    font-size: large;
+}
+
+.box div:nth-child(1) input {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: #eff6ff;
+    padding: 0.5rem;
+    font-size: large;
+    color: #1e3a8a;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+
+.box select {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: #eff6ff;
+    padding: 0.5rem;
+    font-size: large;
+    color: #1e3a8a;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+
+.result_container {
+    width: 30%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+    background-color: #eff6ff;
+    text-align: left;
+    padding: 0.5rem;
+    font-size: large;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+    color: #1e3a8a;
+    resize: none;
+    margin-top: 1rem;
+}
+
+.result_container::placeholder {
+    color: #bfdbfe;
+}
+
+.result_container:nth-child(3) {
+    margin-top: 1rem;
+}
+
+.input_button {
+    background-color: #bfdbfe;
+    padding: 6px 10px 6px 10px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+    color: #1e3a8a;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+    margin: 1rem 0.5rem 0rem 0.5rem;
+    border-bottom: 1px solid #1e3a8a;
+}
+
+.input_button:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.input_button:active {
+    background-color: #93c5fd;
+}
+
+.input_button_box {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+
+    .result_container {
+        width: 80%;
+    }
+}
