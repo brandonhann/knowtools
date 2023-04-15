@@ -15,7 +15,7 @@ export default function App() {
 
     const [items, setItems] = useState([
         { id: 1, name: <>Writer <FontAwesomeIcon icon={faPencil} size='sm' /></>, description: 'Paraphrase, Summarize and Grammar Check', url: '/writer' },
-        { id: 2, name: <>Username Generator <FontAwesomeIcon icon={faUser} size='sm' /></>, description: 'Generate unique usernames with a category selection', url: '/username-generator' },
+        { id: 2, name: <>Username Generator <FontAwesomeIcon icon={faUser} size='sm' /></>, description: 'Generate unique usernames with a enhanced selection', url: '/username-generator' },
         /*
         { id: 2, name: 'Item 2', description: 'This is item 2', url: '/item2' },
         { id: 3, name: 'Item 3', description: 'This is item 3', url: '/item3' },
@@ -46,12 +46,14 @@ export default function App() {
                         </div>
                     </menu>
                 </nav>
-                <div className={css.container_box}>
+                <section className={css.dev_notes}>
+                    <p><span>Warning:</span> My API token's credits are all used up. Therefore, this app is offline until further notice.</p>
+                </section>
+                <section className={css.container_box}>
                     {items.map((item) => (
                         <Card key={item.id} name={item.name} description={item.description} url={item.url} />
                     ))}
-
-                </div>
+                </section>
                 <Footer />
             </main>
 

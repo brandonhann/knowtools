@@ -98,3 +98,41 @@
 .card:hover {
     box-shadow: 0 2px 4px rgba(30, 58, 138, 1);
 }
+
+.dev_notes {
+    margin: auto;
+    padding-top: 1rem;
+    width: 90%;
+    line-height: 2;
+}
+
+.dev_notes p {
+    margin-bottom: 6px;
+}
+
+.dev_notes p span {
+    padding: 6px;
+    background-color: #fef2f2;
+    color: #991b1b;
+    border-radius: 8px;
+    margin-right: 6px;
+    border: 1px solid #fecaca;
+}
+
+@media only screen and (max-width: 1024px) {
+    .index main nav menu {
+        font-size: 18px;
+        display: grid;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .index main nav menu {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {}
